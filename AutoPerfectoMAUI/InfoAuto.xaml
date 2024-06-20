@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoPerfectoMAUI.InfoAuto"
+             Title="InfoAuto"
+             BackgroundColor="LightSkyBlue">
+    <ScrollView>
+        <StackLayout Padding="10"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center">
+            <Label Text="Detalles del Auto" 
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+            <Label Text="Marca:" FontAttributes="Bold"/>
+            <Label Text="{Binding Marca}" FontSize="20"/>
+            <Label Text="Modelo:" FontAttributes="Bold"/>
+            <Label Text="{Binding Modelo}" FontSize="20"/>
+            <Label Text="Año de Fabricación:" FontAttributes="Bold"/>
+            <Label Text="{Binding AnioFabricacion}" FontSize="20"/>
+            <Label Text="Color:" FontAttributes="Bold"/>
+            <Label Text="{Binding Color}" FontSize="20"/>
+            <Label Text="Kilometraje Actual:" FontAttributes="Bold"/>
+            <Label Text="{Binding KmActual}" FontSize="20"/>
+            <Label Text="Tipo de Auto:" FontAttributes="Bold"/>
+            <Label Text="{Binding TipoAuto}" FontSize="20"/>
+            <Label Text="Transmisión:" FontAttributes="Bold"/>
+            <Label Text="{Binding Transmision}" FontSize="20"/>
+            <Label Text="Tipo de Combustible:" FontAttributes="Bold"/>
+            <Label Text="{Binding TipoCombustible}" FontSize="20"/>
+            <Label Text="Cilindraje:" FontAttributes="Bold"/>
+            <Label Text="{Binding Cilindraje}" FontSize="20"/>
+            <Label Text="Potencia:" FontAttributes="Bold"/>
+            <Label Text="{Binding Potencia}" FontSize="20"/>
+            <Button Text="Comprar"
+                    BackgroundColor="Blue"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Clicked="ComprarAuto"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
